@@ -1,6 +1,7 @@
 # Importar módulos
 import requests
 import csv
+import time
 from bs4 import BeautifulSoup
 # Dirección de la página web
 url = "http://quotes.toscrape.com/"
@@ -27,3 +28,7 @@ for t in zip(quotes, authors):
 with open('./zitate.csv', 'w') as csv_file:
     csv_writer = csv.writer(csv_file, dialect='excel')
     csv_writer.writerows(zip(quotes, authors))
+
+while True:
+    time.sleep(3600)  # sleep for one hour
+
