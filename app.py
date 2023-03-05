@@ -32,7 +32,7 @@ with open('./zitate.csv', 'w') as csv_file:
 while True:
     time.sleep(3600)  # sleep for one hour
 
-port = int(os.environ.get("PORT", 80))
+port = int(os.environ.get("PORT", 3000))
 app.run(debug=True, port=port, host="0.0.0.0")
 
 
