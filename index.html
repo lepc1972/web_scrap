@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+</head>
+<body>
+    <h1>Quotes</h1>
+    <ul>
+        {% for quote, author in quotes_and_authors %}
+        <li>{{ quote }} - {{ author }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
