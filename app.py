@@ -32,5 +32,5 @@ def index():
 if __name__ == '__main__':
     # Ejecutar la aplicación Flask en el puerto definido por la variable de entorno 'PORT'
     # port = int(os.environ.get("PORT", 3000))
-    app.run(debug=True, port=3000, host="0.0.0.0")
+    app.run(debug=True, port=8080, host="0.0.0.0")
 
