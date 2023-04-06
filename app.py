@@ -4,7 +4,7 @@ import csv
 import logging
 import os
 import requests
-i  # Imports
+# Imports
 
 # Flask application
 app = Flask(__name__, template_folder='.')
@@ -47,4 +47,4 @@ if __name__ == '__main__':
     print("Starting app on port %d" % port)
 
     # Run the app on the port number
-    app.run(debug=True, port=port, host="
+    app.run(debug=True, port=port)
